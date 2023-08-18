@@ -1,8 +1,21 @@
 import './globals.css'
+import './reset.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import cx from 'classnames';
+import { DotGothic16, New_Tegomin } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const new_Tegomin = New_Tegomin({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-tegomin',
+});
+const dotGothic16 = DotGothic16({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dotGot',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cx(dotGothic16.variable, new_Tegomin.variable)}
+      >{children}</body>
     </html>
   )
 }

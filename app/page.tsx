@@ -46,8 +46,17 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
+          <h2 className={`mb-3 text-2xl`}>
+            <span
+              className='font-tegomin text-5xl'
+            >
+              驢子
+            </span>
+            <span
+              className='font-dotGot text-5xl'
+            >
+              - Docs{' '}
+            </span>
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
